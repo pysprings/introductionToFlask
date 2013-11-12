@@ -30,5 +30,11 @@ def show_fruit():
     myfruit = ['Apples', 'Banannas', 'Strawberries', 'Mangos']
     return render_template('fruit.html', fruits=myfruit)
 
+# Handle a basic form
+@app.route('/greet', methods=['GET'])
+def do_greeting():
+    greetings = ['Hello', 'Salutations']
+    return render_template('greet_form.html', greetings=greetings)
+
 if __name__ == '__main__':
     app.run()
