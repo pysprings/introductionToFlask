@@ -1,2 +1,31 @@
-{# This is empty but will be filled in as part of the tutorial #}
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Please select your greeting</h3>
+
+<form method="post" action="greet">
+    <table>
+        <tr>
+            <th>Greeting</th>
+            <td>
+                <select name="greeting">
+                    {% for greeting in greetings %}
+                        <option value={{ greeting }}>{{ greeting }} </option>
+                    {% endfor %}
+                </select>
+            </td>
+        <tr>
+        <tr>
+            <th>Who to Greet?</th>
+            <td> <input type="text" name="name" value="Bob"/> </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit"/>
+            </td>
+        </tr>
+    <table>
+</form>
+
+{% endblock %}
 
