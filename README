@@ -1,0 +1,23 @@
+################################################################################
+# firstapp - a simple example application, written in Flask
+################################################################################
+
+This is meant to be used as a tutorial and is purposely simple and somewhat
+incomplete.
+
+If you end up using this template for a more complicated application, it is
+suggested that you modify the directory structure to allow for this
+   firstapp/
+   firstapp/templates/*
+   firstapp/static/*
+   firstapp/firstapp.py
+   testing/
+   testing/test_firstapp.py
+   pytest.ini
+   LICENSE
+   README
+
+Note that if you do modify the directory structure as mentioned above, the
+imports in test_firstapp will need to be modified and __init__.py files
+will need to be added to the firstapp/ and testing/ directories (even if they
+are empty)
