@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+{# Since this isn't about html, an example form is shown below #}
+<form method="POST" action="/">
+    <select name="fruit">
+        <option value="Apple">Apple</option>
+        <option value="Bananna">Bananna</option>
+        <option value="Mango">Mango</option>
+    </select>
+    <input id="other" name="other" type="text" value="">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}
