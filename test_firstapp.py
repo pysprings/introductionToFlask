@@ -8,5 +8,4 @@ class TestFirstapp():
     # This test is overly simplistic but it does work
     def test_index(self):
         rv = self.app.get('/')
-
-        assert 'Flask' in rv.data
+        assert b'Flask' in rv.data
